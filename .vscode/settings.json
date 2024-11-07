@@ -1,0 +1,20 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.compile.nullAnalysis.mode": "disabled",
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "mysql",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "yieldstreet",
+            "database": "yieldstreet",
+            "username": "yieldstreet",
+            "password": "yieldstreet"
+        }
+    ]
+}

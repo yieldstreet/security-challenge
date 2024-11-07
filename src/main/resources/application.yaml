@@ -1,0 +1,6 @@
+spring:
+  application.name: security-challenge
+  flyway:
+    enabled: true
+    validate-on-migrate: true
+    default-schema: yieldstreet
