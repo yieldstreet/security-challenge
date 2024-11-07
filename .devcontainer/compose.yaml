@@ -1,0 +1,20 @@
+volumes:
+  mysql-data:
+
+services:
+  app:
+    image: mcr.microsoft.com/devcontainers/java:1-17-bullseye
+    command: sleep infinity
+    network_mode: service:mysql
+    volumes:
+      - ../..:/workspaces:cached
+  mysql:
+    image: mysql:8
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: yieldstreet
+      MYSQL_DATABASE: yieldstreet
+      MYSQL_USER: yieldstreet
+      MYSQL_PASSWORD: yieldstreet
+    volumes:
+      - mysql-data:/var/lib/mysql
